@@ -28,7 +28,7 @@
     let unavailableSlots = 0;
     var curr = Date.now();
 
-    for (let i = listItems.length -1; i = 0; i--) {
+    for (let i = listItems.length -1; i >= 0; i--) {
         
         if (listItems[i].innerHTML.includes("Unavail")) {
             unavailableSlots = unavailableSlots + 1;
@@ -47,7 +47,7 @@
     // let's iterate through the Nodelist in reverse length minus 1 because index starts at zero
     // currently minus 14 because we only want to book something within the next 9 days
     // we're driving in reverse because we want the click logic to start from the furthest slot out
-    for (let i = listItems.length -10; i = 0; i--) {
+    for (let i = listItems.length -10; i >= 0; i--) {
 
         // this pulls out the delivery slots that are unavailable and highlights them red on screen
         if (listItems[i].innerHTML.includes("Unavail")) {
