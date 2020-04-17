@@ -2,6 +2,6 @@
 
 - Refreshes delivery slot page every 15 seconds
 - Identifies which elements are delivery slots which are unavailable
-- Identifies which elements are delivery slots which aren't unavailable (and therefore are available)
-- Stores a count of each of the above 2 in local storage for pattern analysis later
-- Highlights on the page the available delivery slot for further user interaction
+- Identifies which elements are delivery slots which are clickable (and therefore are available)
+- Stores a count of available slots and when they became available for pattern analysis later
+- Clicks the delivery slot for further user interaction
