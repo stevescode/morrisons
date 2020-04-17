@@ -28,7 +28,7 @@
     let unavailableSlots = 0;
     var curr = Date.now();
 
-    for (let i = listItems.length -1; i > 0; i--) {
+    for (let i = listItems.length -1; i = 0; i--) {
         
         if (listItems[i].innerHTML.includes("Unavail")) {
             unavailableSlots = unavailableSlots + 1;
